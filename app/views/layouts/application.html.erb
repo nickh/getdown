@@ -3,12 +3,33 @@
 <head>
   <title>Getdown</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= stylesheet_link_tag    'blueprint/screen.css', media: 'screen, projection' %>
+  <%= stylesheet_link_tag    'blueprint/print.css',  media: 'print' %>
+  <!--[if lt IE 8]>
+    <%= stylesheet_link_tag  'blueprint/ie.css', media: 'screen, projection' %>
+  <![endif]--></code></pre>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+<div class="span-24">
+  <h1>Visualize ♫ Play ♫ Get Down</h1>
+</div>
+
+<div class="span-4"></div>
+<div class="span-16">
+  <%= yield %>
+</div>
+<div class="span-4 last"></div>
+
+<div class="span-24">
+  We hope you like jamming too.
+</div>
+</div>
 
 </body>
 </html>
