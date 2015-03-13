@@ -1,0 +1,7 @@
+<h2>You can tell everybody, this is your song</h2>
+
+<% if @songs.empty? %>
+  Erm, plz to be adding something
+<% else %>
+  <%= render partial: "song", collection: @songs %>
+<% end %>

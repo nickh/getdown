@@ -2,8 +2,8 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
   def name=(new_name)
-    @name            = new_name
-    @normalized_name = normalize(new_name)
+    self[:name]            = new_name
+    self[:normalized_name] = normalize(name)
   end
 
   def normalized_name=
