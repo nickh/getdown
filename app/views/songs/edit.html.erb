@@ -1,7 +1,7 @@
 <h2>Add this song</h2>
 
 <%= form_for @song do |f| %>
-  <%= label_tag :artist %><%= text_field_tag :artist %>
+  <%= label_tag :artist %><%= text_field_tag :artist, @song.artist.try(:name) %>
   <%= f.label :name %><%= f.text_field :name %>
   <%= f.label :body %><%= f.text_area :body %>
 

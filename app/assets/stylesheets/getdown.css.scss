@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table.song {
+  tr {
+    &:nth-child(even) td { background: #fff; }
+    td {
+      background: #fff;
+      > span {
+        padding: 3px;
+        margin: 2px;
+      }
+      &.chord-list > span {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
