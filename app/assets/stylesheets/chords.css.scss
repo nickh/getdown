@@ -1,5 +1,31 @@
-.chord-G  { background: #F59D6F; }
-.chord-G⁷ { background: #D57D4F; }
 .chord-C  { background: #F0838B; }
-.chord-D  { background: #FBBA76; }
+.chord-Am { background: #D4747B; }
+.chord-G  { background: #B8DA89; }
+.chord-Em { background: #A3C17B; }
+.chord-D  { background: #838DD5; }
+.chord-A  { background: #F79D6F; }
+.chord-E  { background: #5DC3F3; }
+.chord-B  { background: #84E2A1; }
+.chord-F  { background: #76DBD3; }
+.chord-Dm { background: #6AC3BB; }
+.chord-G⁷ { background: #D57D4F; }
 .chord-D⁷ { background: #DB9A56; }
+
+.chord-E⁷ {
+  background: repeating-linear-gradient(
+    45deg,
+    #5DC3F3,
+    #5DC3F3 5px,
+    #53ACD6 5px,
+    #53ACD6 10px
+  );
+}
+.chord-A⁷ {
+  background: repeating-linear-gradient(
+    45deg,
+    #F59D6F,
+    #F59D6F 5px,
+    #D4885F 5px,
+    #D4885F 10px
+  );
+}
