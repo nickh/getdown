@@ -6,3 +6,10 @@ I'm playing music.
 I find that when I'm looking at the lyrics, I lose track of the chords and vice
 versa. My hope is that colorizing the lyrics to match the chords lets my brain
 follow along better.
+
+## Get Started
+
+- `bundle`
+- `rake db:create db:migrate db:setup`
+- `rails s`
+- Browse to http://localhost:3000/
