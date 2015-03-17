@@ -7,10 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 
+u = User.create(:name => "Starving Musician")
+
 jc = Artist.create(:name => "Johnny Cash")
 ct = Artist.create(:name => "Charles Trenet")
 
-Song.create(:artist => jc, :name => "You Are My Sunshine", :body => <<EOB
+Song.create(:user => u, :artist => jc, :name => "You Are My Sunshine", :body => <<EOB
 {title: You Are My Sunshine}
 
 {c:Verse 1}
@@ -41,7 +43,7 @@ You have shattered [D7]all of my [G]dreams
 EOB
 )
 
-Song.create(:artist => ct, :name => "La Mer", :body => <<EOB
+Song.create(:user => u, :artist => ct, :name => "La Mer", :body => <<EOB
 {title: La Mer}
 
 [C]La Mer[Am][F]

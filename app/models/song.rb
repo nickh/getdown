@@ -1,5 +1,8 @@
 class Song < ActiveRecord::Base
   belongs_to :artist
+  belongs_to :user
+
+  validates :user, presence: true
 
   def name=(new_name)
     self[:name]            = new_name
