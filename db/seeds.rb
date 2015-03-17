@@ -70,7 +70,6 @@ Ces [F#m]grands [B7]roseaux moui[E]llés
 Et [Am]ces [D7]maisons roui[G]llées[G7][Em][G7]
 
 [C]La Mer[Am][F]
-D7        G  Em
 [G7]Les a berc[C]és[Am]
 Le [F]long [G7]des golfes [C]clairs[E7][Am]
 [G7]Et d'une chan[C]son [Am]d'amour,
