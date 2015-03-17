@@ -73,6 +73,6 @@ D7        G  Em
 Le [F]long [G7]des golfes [C]clairs[E7][Am]
 [G7]Et d'une chan[C]son [Am]d'amour,
 [F]La mer[A7][Dm]
-A [G]ber[E7]cé mon [Am]coeur [F7]pour la [G7]vi- [D7]- [C]e
+A [G]ber[E7]cé mon [Am]coeur [F]pour la [G7]vi- [D7]- [C]e
 EOB
 )
