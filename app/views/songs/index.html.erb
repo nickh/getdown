@@ -1,6 +1,19 @@
 <% if @songs.empty? %>
   Erm, plz to be adding something
 <% else %>
-  <h2>These are your songs</h2>
-  <%= render partial: "song", collection: @songs %>
+  <% if @owner
+       whose = @owner == current_user ? "your" : "#{@owner.name}'s"
+     else
+       whose = "the"
+     end %>
+
+  <h2>These are all <%= whose %> songs</h2>
+  <% if current_user %>
+    <div class="add-song"><%= link_to "Add a song", new_song_path %></div>
+  <% end %>
+
+  <table>
+    <tr><th>Added by</th><th>Artist</th><th>Song</th></tr>
+    <%= render partial: "song", collection: @songs %>
+  </table>
 <% end %>

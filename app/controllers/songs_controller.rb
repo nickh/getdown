@@ -1,8 +1,16 @@
 class SongsController < ApplicationController
 
-  # Show all songs
+  before_action :ensure_logged_in
+  skip_before_action :ensure_logged_in, only: [:index, :show]
+
+  # Show all songs (optionally those owned by a particular user)
   def index
-    @songs = Song.all
+    if params[:user_id]
+      @owner = User.find(params[:user_id])
+      @songs = Song.where(:user => @owner)
+    else
+      @songs = Song.all
+    end
   end
 
   def show
@@ -20,7 +28,7 @@ class SongsController < ApplicationController
 
   # Add a song
   def create
-    @song = Song.new(song_params)
+    @song = Song.new(song_params.merge(:user => current_user))
     @song.artist = Artist.find_or_create(params.permit(:artist)[:artist])
     @song.save
 
@@ -33,13 +41,13 @@ class SongsController < ApplicationController
 
   # Start editing an existing song
   def edit
-    @song = Song.find(params[:id])
+    @song = Song.where(:user => current_user).find(params[:id])
     # Handle 404
   end
 
   # Update a song
   def update
-    @song = Song.find(params[:id])
+    @song = Song.where(:user => current_user).find(params[:id])
     @song.update_attributes(song_params)
 
     # Add flash notice
@@ -51,7 +59,7 @@ class SongsController < ApplicationController
 
   # Delete a song
   def delete
-    @song = Song.find(params[:id])
+    @song = Song.where(:user => current_user).find(params[:id])
     @song.destroy
 
     # Add flash notice
