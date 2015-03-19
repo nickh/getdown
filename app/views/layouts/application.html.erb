@@ -3,13 +3,13 @@
 <head>
   <title>Getdown</title>
   <link href='http://fonts.googleapis.com/css?family=Raleway:500,800,700,300' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
   <%= stylesheet_link_tag    'blueprint/screen.css', media: 'screen, projection' %>
   <%= stylesheet_link_tag    'blueprint/print.css',  media: 'print' %>
   <!--[if lt IE 8]>
     <%= stylesheet_link_tag  'blueprint/ie.css', media: 'screen, projection' %>
   <![endif]-->
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
