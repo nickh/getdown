@@ -20,7 +20,7 @@
 <div class="span-24 header">
   <h1>Visualize ♫ Play ♫ Get Down</h1>
 
-  <div id="user_nav">
+  <div id="user_nav" class="user-nav">
     <% if current_user %>
       Signed in as <strong><%= current_user.name %></strong>!
       <%= link_to "Sign out", signout_path, id: "sign_out" %>

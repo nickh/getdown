@@ -29,3 +29,26 @@ table.song {
     }
   }
 }
+
+.user-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    display: block;
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+    margin-top: 3px;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: opacity .5s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
