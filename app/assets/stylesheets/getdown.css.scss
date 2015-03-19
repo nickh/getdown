@@ -1,5 +1,34 @@
+@import "mixins";
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+// header styles -----------------------------------
+
+.site-header {
+  background: $navy;
+  min-height: 60px;
+  color: white;
+  margin-bottom: 40px;
+
+  .home-link {
+    display: block;
+    transition: $opacity_transition;
+    float: left;
+    margin: 5px 0 0;
+
+    &:hover { opacity: .8; }
+  }
+
+  .tagline {
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    margin: 0;
+    margin-left: 180px;
+    color: $light_blue;
+  }
 }
 
 .header {
@@ -34,9 +63,8 @@ table.song {
 }
 
 .user-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: left;
+  margin-top: 11px;
 
   a {
     display: block;
@@ -45,10 +73,10 @@ table.song {
     text-decoration: none;
     margin-top: 3px;
     padding: 5px 10px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
-    transition: opacity .5s ease;
+    transition: $opacity_transition;
 
     &:hover {
       opacity: .7;
