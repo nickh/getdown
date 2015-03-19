@@ -29,12 +29,34 @@ body {
     margin-left: 180px;
     color: $light_blue;
   }
+
+  .note {
+    color: $blue;
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+
+  .user-nav { float: right; }
 }
 
-.header {
-  h1 { float: left; }
-  div.user-nav { float: right; }
+@keyframes floating {
+  0% { transform: translateY(0%); }
+  50% { transform: translateY(5%); }
+  100% { transform: translateY(0%); }
 }
+@-webkit-keyframes floating {
+  0% { -webkit-transform: translateY(0%); }
+  50% { -webkit-transform: translateY(5%); }
+  100% { -webkit-transform: translateY(0%); }
+}
+
+
+
 
 .footer {
   text-align: center;
