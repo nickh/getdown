@@ -17,10 +17,18 @@ table.song {
         text-shadow: 0px 0px 3px #fff;
         padding: 3px;
         margin: 2px;
+        &.nobreak {
+          margin-right: 0px;
+          padding-right: 0px;
+        }
       }
       &.chord-list > span {
         padding-left: 5px;
         padding-right: 5px;
+      }
+      > span.nobreak + span {
+        margin-left: 0px;
+        padding-left: 0px;
       }
     }
   }

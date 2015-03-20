@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nickh/chordpro
-  revision: bfffce797a303b255aace3d3f8b298d500357b56
+  revision: ab0cf3f1f2450b077ee860baba3e463a140ba5ab
   branch: colorized
   specs:
     chordpro (0.0.1)
