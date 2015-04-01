@@ -1,11 +1,69 @@
-.header {
-  h1 { float: left; }
-  div.user-nav { float: right; }
+@import "mixins";
+
+body {
+  font-family: 'Varela Round', sans-serif;
 }
+
+// header styles -----------------------------------
+
+.site-header {
+  background: $navy;
+  min-height: 60px;
+  color: white;
+  margin-bottom: 40px;
+
+  .home-link {
+    display: block;
+    transition: $opacity_transition;
+    float: left;
+    margin: 5px 0 0;
+
+    &:hover { opacity: .8; }
+  }
+
+  .tagline {
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    margin: 0;
+    margin-left: 180px;
+    color: $light_blue;
+  }
+
+  .note {
+    color: $blue;
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+
+  .user-nav { float: right; }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0%); }
+  50% { transform: translateY(5%); }
+  100% { transform: translateY(0%); }
+}
+@-webkit-keyframes floating {
+  0% { -webkit-transform: translateY(0%); }
+  50% { -webkit-transform: translateY(5%); }
+  100% { -webkit-transform: translateY(0%); }
+}
+
+
+
 
 .footer {
   text-align: center;
   margin-top: 20px;
+  padding: 20px;
+  border-top: $border_value;
+  color: #bbb;
 }
 
 table.song {
@@ -30,6 +88,28 @@ table.song {
         margin-left: 0px;
         padding-left: 0px;
       }
+    }
+  }
+}
+
+.user-nav {
+  float: left;
+  margin-top: 11px;
+
+  a {
+    display: block;
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+    margin-top: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: $opacity_transition;
+
+    &:hover {
+      opacity: .7;
     }
   }
 }

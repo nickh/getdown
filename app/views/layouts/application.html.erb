@@ -2,42 +2,50 @@
 <html>
 <head>
   <title>Getdown</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'blueprint/screen.css', media: 'screen, projection' %>
   <%= stylesheet_link_tag    'blueprint/print.css',  media: 'print' %>
   <!--[if lt IE 8]>
     <%= stylesheet_link_tag  'blueprint/ie.css', media: 'screen, projection' %>
-  <![endif]--></code></pre>
+  <![endif]-->
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="container">
-<div class="span-24 header">
-  <h1>Visualize ♫ Play ♫ Get Down</h1>
+<header class="site-header">
+  <div class="container">
+    <div class="span-24 header">
 
-  <div id="user_nav">
-    <% if current_user %>
-      Signed in as <strong><%= current_user.name %></strong>!
-      <%= link_to "Sign out", signout_path, id: "sign_out" %>
-    <% else %>
-      <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-    <% end %>
+      <a href="/" class="home-link"><%= image_tag 'getdown-logo.svg', width: '160', class: 'site-logo' %></a>
+
+      <p class="tagline">Visualize <span class="note note1">♫</span> Play <span class="note note2">♫</span> Get Down</p>
+
+      <div id="user_nav" class="user-nav">
+        <% if current_user %>
+          Signed in as <strong><%= current_user.name %></strong>!
+          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <% else %>
+          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+        <% end %>
+      </div>
+    </div>
   </div>
-</div>
+</header>
 
-<div class="span-4"></div>
-<div class="span-16">
+<div class="container">
+  <div class="span-4"></div>
+  <div class="span-16">
   <%= yield %>
-</div>
-<div class="span-4 last"></div>
+  </div>
+  <div class="span-4 last"></div>
 
-<div class="span-24 footer">
-  We hope you like jamming too.
-</div>
+  <div class="span-24 footer">
+    <p>We hope you like jamming too.</p>
+  </div>
 </div>
 
 </body>
