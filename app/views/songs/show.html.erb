@@ -1,10 +1,4 @@
-<h2>Here is a little song I wrote</h2>
-
-Artist: <%= @song.artist.name %>
-
-Name: <%= @song.name %>
-
-Lyrics:
+<h2><%= @song.artist.name %>: <%= @song.name %></h2>
 
 <table class="song">
   <%= Chordpro.colorized(@song.body, :show_title => false).html_safe %>
