@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "user": "Starving Musician",
+    "artist": "Johnny Cash",
+    "name": "You Are My Sunshine",
+    "body": "{title: You Are My Sunshine}\n\n{c:Verse 1}\n[G]The other night dear as I lay sleeping\n[G7]I dreamed I [C]held you in my [G]arms\n[G7]But when I a[C]woke dear I was mis[G]taken\nSo I hung my [D7]head and [G]cried\n\n{c:Chorus}\n{soc}\nYou are my sunshine my only sunshine\n[G7]You make me [C]happy when skies are [G]gray\n[G7]You'll never [C]know dear how much I [G]love you\nPlease don't take [D7]my sunshine a[G]way\n{eoc}\n\n{c:Verse 2}\nI'll always love you and make you happy\n[G7]If you will [C]only say the [G]same\n[G7]But if you [C]leave me and love an[G]other\nYou'll regret [D7]it all some [G]day\n\n{c:Verse 3}\nYou told me once dear you really loved me\n[G7]And no one [C]else could come be[G]tween\n[G7]But now you've [C]left me and love an[G]other\nYou have shattered [D7]all of my [G]dreams"
+  },
+  {
+    "id": 2,
+    "user": "Starving Musician",
+    "artist": "Charles Trenet",
+    "name": "La Mer",
+    "body": "[B7]Voy-[E]ez[C#m][F#m]\n[B7]Près des é[E]tangs[C#m]\nCes [F#m]grands [B7]roseaux moui[E]llés\n[D7]Voy-[G]ez[Em][Am]\n[D7]Ces oiseaux [G]blancs[Em]\nEt [Am]ces [D7]maisons roui[G]llées[G7][Em][G7]\n\n[C]La Mer[Am][F]\n[G7]Les a berc[C]és[Am]\nLe [F]long [G7]des golfes [C]clairs[E7][Am]\n[G7]Et d'une chan[C]son [Am]d'amour,\n[F]La mer[A7][Dm]\nA [G]ber[E7]cé mon [Am]coeur [F]pour la [G7]vi- [D7]- [C]e"
+  }
+]

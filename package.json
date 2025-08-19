@@ -1,0 +1,16 @@
+{
+  "name": "getdown",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Visualize, Play, Get Down - A chord progression display app",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
