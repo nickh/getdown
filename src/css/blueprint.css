@@ -1,0 +1,46 @@
+/* Simplified Blueprint CSS substitute */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Basic reset */
+h1, h2, h3, h4, h5, h6, p, table, ul, ol {
+  margin: 0 0 1em 0;
+}
+
+/* Basic grid system */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.span-24 {
+  width: 100%;
+  float: left;
+}
+
+/* Clear floats */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

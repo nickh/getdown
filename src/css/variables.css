@@ -1,0 +1,10 @@
+/* CSS Variables - converted from SCSS mixins */
+:root {
+  --border-gray: #ddd;
+  --border-value: 1px solid #ddd;
+  --navy: #263648;
+  --light-blue: #B6D7FF;
+  --lightest-blue: #E9F3FF;
+  --blue: #5EA7FF;
+  --opacity-transition: opacity .5s ease;
+}
